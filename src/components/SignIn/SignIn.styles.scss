@@ -2,14 +2,9 @@
 
 .signin-page {
   background: #bdbdbd;
-  height: 100vh;
-  position: relative;
 
   &__wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
   }
 }
 
@@ -17,7 +12,7 @@
   background: #fff;
   border-radius: 0.8rem;
   padding: 6rem;
-  min-width: 30rem;
+  max-width: 60rem;
 
   &__title {
     margin-bottom: 8rem;

@@ -2,21 +2,16 @@
 
 .profile-page {
   background: #5e5e5e;
-  height: 100vh;
-  position: relative;
 
   &__wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
   }
 
   .info {
     border-radius: 0.8rem;
     background: #fff;
     padding: 10rem;
-    min-width: 40rem;
+    max-width: 80rem;
 
     &__title {
       margin-bottom: 6rem;
