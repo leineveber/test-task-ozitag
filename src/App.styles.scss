@@ -1,0 +1,99 @@
+@import './styles/breakpoints.scss';
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('./fonts/roboto-v27-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('./fonts/roboto-v27-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('./fonts/roboto-v27-latin-regular.woff')
+      format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 425px;
+  font-size: 2.4rem;
+}
+
+button,
+input {
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1232px;
+  padding: 6rem 1.2rem;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid #000;
+  width: 100%;
+  padding: 2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  body {
+    font-size: 1.9rem;
+  }
+
+  .container {
+    max-width: 728px;
+    padding: 4rem 1.2rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    max-width: 400px;
+    padding: 2rem 1.2rem;
+  }
+
+  .button {
+    padding: 1rem;
+  }
+}

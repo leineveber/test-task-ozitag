@@ -1,0 +1,45 @@
+@import '../../styles/breakpoints.scss';
+
+.signin-page {
+  background: #bdbdbd;
+  height: 100vh;
+  position: relative;
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.signin {
+  background: #fff;
+  border-radius: 0.8rem;
+  padding: 6rem;
+  min-width: 30rem;
+
+  &__title {
+    margin-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet) {
+  .signin {
+    padding: 4.5rem;
+
+    &__title {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+  .signin {
+    padding: 3rem;
+
+    &__title {
+      margin-bottom: 4rem;
+    }
+  }
+}
